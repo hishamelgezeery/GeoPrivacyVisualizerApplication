@@ -22,5 +22,14 @@ namespace GeoPrivacyVisualizerApplication.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\App Files\\")]
+        public string FolderPath {
+            get {
+                return ((string)(this["FolderPath"]));
+            }
+        }
     }
 }

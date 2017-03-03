@@ -129,11 +129,14 @@
             this.allVisitedPlacesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.allVisitedPlacesButton.TextWrap = true;
             this.allVisitedPlacesButton.Visible = false;
+            this.allVisitedPlacesButton.Click += new System.EventHandler(this.allVisitedPlacesButton_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.allVisitedPlacesButton.GetChildAt(0))).Image = null;
             ((Telerik.WinControls.UI.RadButtonElement)(this.allVisitedPlacesButton.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             ((Telerik.WinControls.UI.RadButtonElement)(this.allVisitedPlacesButton.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             ((Telerik.WinControls.UI.RadButtonElement)(this.allVisitedPlacesButton.GetChildAt(0))).DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
             ((Telerik.WinControls.UI.RadButtonElement)(this.allVisitedPlacesButton.GetChildAt(0))).Text = "All Visited Places";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.allVisitedPlacesButton.GetChildAt(0))).ToolTipText = "This option shows information about your location history including the places yo" +
+    "u have been to";
             ((Telerik.WinControls.UI.RadButtonElement)(this.allVisitedPlacesButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.LimeGreen;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
@@ -476,6 +479,7 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.RoutinePlacesButton.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             ((Telerik.WinControls.UI.RadButtonElement)(this.RoutinePlacesButton.GetChildAt(0))).DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
             ((Telerik.WinControls.UI.RadButtonElement)(this.RoutinePlacesButton.GetChildAt(0))).Text = "Routine Visits";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.RoutinePlacesButton.GetChildAt(0))).ToolTipText = "This option shows information about your visit patterns";
             ((Telerik.WinControls.UI.RadButtonElement)(this.RoutinePlacesButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
@@ -506,6 +510,7 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.FavouritePlacesButton.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             ((Telerik.WinControls.UI.RadButtonElement)(this.FavouritePlacesButton.GetChildAt(0))).DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
             ((Telerik.WinControls.UI.RadButtonElement)(this.FavouritePlacesButton.GetChildAt(0))).Text = "Favourite";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.FavouritePlacesButton.GetChildAt(0))).ToolTipText = "This option shows information about your top visited places";
             ((Telerik.WinControls.UI.RadButtonElement)(this.FavouritePlacesButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;

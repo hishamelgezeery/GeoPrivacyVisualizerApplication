@@ -16,6 +16,8 @@ namespace GeoPrivacyVisualizerApplication
         bool myPlacesVisible = false;
         bool myInterestsVisible = false;
         bool myFriendsVisible = false;
+        public string username;
+        public string pathToFiles;
         public MainForm()
         {
             InitializeComponent();
@@ -23,7 +25,7 @@ namespace GeoPrivacyVisualizerApplication
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            userButton.Text = username;
         }
 
         private void myPlacesButton_Click(object sender, EventArgs e)
@@ -59,6 +61,18 @@ namespace GeoPrivacyVisualizerApplication
             favouriteInterestsButton.Visible = myInterestsVisible ? true : false;
             routineInterestsLine.Visible = myInterestsVisible ? true : false;
             routineInterestsButton.Visible = myInterestsVisible ? true : false;
+        }
+
+        private void allVisitedPlacesButton_Click(object sender, EventArgs e)
+        {
+            Form form = new Form();
+            MyPlaces.AllVisitedPlacesUserControl control= new MyPlaces.AllVisitedPlacesUserControl(pathToFiles);
+            form.Width = control.Width;
+            form.Height = control.Height;
+            control.Dock = DockStyle.Fill;
+            form.Controls.Add(control);
+            form.WindowState = FormWindowState.Maximized;
+            form.ShowDialog();
         }
     }
 }
