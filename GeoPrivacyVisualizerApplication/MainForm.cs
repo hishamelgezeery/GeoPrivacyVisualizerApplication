@@ -66,7 +66,34 @@ namespace GeoPrivacyVisualizerApplication
         private void allVisitedPlacesButton_Click(object sender, EventArgs e)
         {
             Form form = new Form();
+            form.Text = "All visits to places";
             MyPlaces.AllVisitedPlacesUserControl control= new MyPlaces.AllVisitedPlacesUserControl(pathToFiles);
+            form.Width = control.Width;
+            form.Height = control.Height;
+            control.Dock = DockStyle.Fill;
+            form.Controls.Add(control);
+            form.WindowState = FormWindowState.Maximized;
+            form.ShowDialog();
+        }
+
+        private void FavouritePlacesButton_Click(object sender, EventArgs e)
+        {
+            Form form = new Form();
+            form.Text = "Favourite visits to places";
+            MyPlaces.FavouriteVisitedPlacesUserControl control = new MyPlaces.FavouriteVisitedPlacesUserControl(pathToFiles);
+            form.Width = control.Width;
+            form.Height = control.Height;
+            control.Dock = DockStyle.Fill;
+            form.Controls.Add(control);
+            form.WindowState = FormWindowState.Maximized;
+            form.ShowDialog();
+        }
+
+        private void RoutinePlacesButton_Click(object sender, EventArgs e)
+        {
+            Form form = new Form();
+            MyPlaces.RoutinePlacesUserControl control = new MyPlaces.RoutinePlacesUserControl(pathToFiles);
+            form.Text = "Routine visits to places";
             form.Width = control.Width;
             form.Height = control.Height;
             control.Dock = DockStyle.Fill;

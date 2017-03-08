@@ -50,6 +50,7 @@
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +61,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Telerik.WinControls, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.ChartView, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.GridView, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="Telerik.WinControls.UI, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
     <Reference Include="TelerikCommon, Version=2016.1.216.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
@@ -77,6 +79,18 @@
     <Compile Include="LoginForm.designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyPlaces\RoutinePlacesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyPlaces\RoutinePlacesUserControl.Designer.cs">
+      <DependentUpon>RoutinePlacesUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyPlaces\FavouriteVisitedPlacesUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyPlaces\FavouriteVisitedPlacesUserControl.Designer.cs">
+      <DependentUpon>FavouriteVisitedPlacesUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyPlaces\AllVisitedPlacesUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -91,6 +105,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPlaces\RoutinePlacesUserControl.resx">
+      <DependentUpon>RoutinePlacesUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyPlaces\FavouriteVisitedPlacesUserControl.resx">
+      <DependentUpon>FavouriteVisitedPlacesUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyPlaces\AllVisitedPlacesUserControl.resx">
       <DependentUpon>AllVisitedPlacesUserControl.cs</DependentUpon>

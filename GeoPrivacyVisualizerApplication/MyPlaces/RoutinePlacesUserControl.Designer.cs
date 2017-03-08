@@ -1,6 +1,6 @@
 ﻿namespace GeoPrivacyVisualizerApplication.MyPlaces
 {
-    partial class AllVisitedPlacesUserControl
+    partial class RoutinePlacesUserControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -38,7 +38,6 @@
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,7 +57,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GeoPrivacyVisualizerApplication.Properties.Resources.important_98442_960_720;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(22, 33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -77,15 +76,15 @@
             // 
             // radSeparator1
             // 
-            this.radSeparator1.Location = new System.Drawing.Point(3, 90);
+            this.radSeparator1.Location = new System.Drawing.Point(3, 116);
             this.radSeparator1.Name = "radSeparator1";
-            this.radSeparator1.Size = new System.Drawing.Size(865, 16);
+            this.radSeparator1.Size = new System.Drawing.Size(742, 16);
             this.radSeparator1.TabIndex = 2;
             this.radSeparator1.Text = "radSeparator1";
             // 
             // radSeparator2
             // 
-            this.radSeparator2.Location = new System.Drawing.Point(859, 31);
+            this.radSeparator2.Location = new System.Drawing.Point(743, 31);
             this.radSeparator2.Name = "radSeparator2";
             this.radSeparator2.Orientation = System.Windows.Forms.Orientation.Vertical;
             this.radSeparator2.Size = new System.Drawing.Size(10, 606);
@@ -94,13 +93,14 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.75F);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10F);
             this.label2.Location = new System.Drawing.Point(95, 60);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(430, 21);
+            this.label2.Size = new System.Drawing.Size(642, 46);
             this.label2.TabIndex = 4;
-            this.label2.Text = "People can know places you have been to and when ";
+            this.label2.Text = "People can find out your visit routines to places, your private places and when y" +
+    "ou are absent from them, and where you are probably going next after visiting a " +
+    "particular place.  ";
             // 
             // allVisitedPlacesGrid
             // 
@@ -119,60 +119,56 @@
             this.allVisitedPlacesGrid.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
             gridViewTextBoxColumn1.EnableExpressionEditor = false;
             gridViewTextBoxColumn1.FieldName = "VenueName";
-            gridViewTextBoxColumn1.HeaderText = "Name";
-            gridViewTextBoxColumn1.Name = "Name";
-            gridViewTextBoxColumn1.Width = 158;
+            gridViewTextBoxColumn1.HeaderText = "Place Name ";
+            gridViewTextBoxColumn1.Name = "VenueName";
+            gridViewTextBoxColumn1.Width = 150;
             gridViewTextBoxColumn2.EnableExpressionEditor = false;
-            gridViewTextBoxColumn2.FieldName = "Latitude";
-            gridViewTextBoxColumn2.HeaderText = "Coordinates(X)";
-            gridViewTextBoxColumn2.Name = "Coordinates(X)";
+            gridViewTextBoxColumn2.FieldName = "CategoryName";
+            gridViewTextBoxColumn2.HeaderText = "Type";
+            gridViewTextBoxColumn2.Name = "CategoryName";
             gridViewTextBoxColumn2.ReadOnly = true;
-            gridViewTextBoxColumn2.Width = 69;
+            gridViewTextBoxColumn2.Width = 93;
             gridViewTextBoxColumn3.EnableExpressionEditor = false;
-            gridViewTextBoxColumn3.FieldName = "Longitude";
-            gridViewTextBoxColumn3.HeaderText = "Coordinates(Y)";
-            gridViewTextBoxColumn3.Name = "Coordinates(Y)";
-            gridViewTextBoxColumn3.Width = 69;
+            gridViewTextBoxColumn3.FieldName = "CategoryURLType";
+            gridViewTextBoxColumn3.HeaderText = "Main Type";
+            gridViewTextBoxColumn3.Name = "CategoryURLType";
+            gridViewTextBoxColumn3.Width = 93;
             gridViewTextBoxColumn4.EnableExpressionEditor = false;
-            gridViewTextBoxColumn4.FieldName = "DateOnly";
-            gridViewTextBoxColumn4.HeaderText = "Date";
-            gridViewTextBoxColumn4.Name = "Date";
-            gridViewTextBoxColumn4.Width = 69;
+            gridViewTextBoxColumn4.FieldName = "FormattedAddress";
+            gridViewTextBoxColumn4.HeaderText = "Address";
+            gridViewTextBoxColumn4.Name = "FormattedAddress";
+            gridViewTextBoxColumn4.Width = 93;
             gridViewTextBoxColumn5.EnableExpressionEditor = false;
-            gridViewTextBoxColumn5.FieldName = "TimeOnly";
-            gridViewTextBoxColumn5.HeaderText = "Time";
-            gridViewTextBoxColumn5.Name = "Time";
-            gridViewTextBoxColumn5.Width = 69;
+            gridViewTextBoxColumn5.FieldName = "City";
+            gridViewTextBoxColumn5.HeaderText = "City";
+            gridViewTextBoxColumn5.Name = "City";
+            gridViewTextBoxColumn5.Width = 94;
             gridViewTextBoxColumn6.EnableExpressionEditor = false;
-            gridViewTextBoxColumn6.FieldName = "CategoryName";
-            gridViewTextBoxColumn6.HeaderText = "Type";
-            gridViewTextBoxColumn6.Name = "Type";
-            gridViewTextBoxColumn6.Width = 69;
+            gridViewTextBoxColumn6.FieldName = "Count";
+            gridViewTextBoxColumn6.HeaderText = "No. of visits";
+            gridViewTextBoxColumn6.Name = "Count";
+            gridViewTextBoxColumn6.Width = 63;
             gridViewTextBoxColumn7.EnableExpressionEditor = false;
-            gridViewTextBoxColumn7.FieldName = "CategoryURLType";
-            gridViewTextBoxColumn7.HeaderText = "Main Type";
-            gridViewTextBoxColumn7.Name = "Main Type";
-            gridViewTextBoxColumn7.Width = 69;
+            gridViewTextBoxColumn7.FieldName = "Day";
+            gridViewTextBoxColumn7.HeaderText = "Day";
+            gridViewTextBoxColumn7.Name = "Day";
+            gridViewTextBoxColumn7.Width = 56;
             gridViewTextBoxColumn8.EnableExpressionEditor = false;
-            gridViewTextBoxColumn8.FieldName = "FormattedAddress";
-            gridViewTextBoxColumn8.HeaderText = "Address";
-            gridViewTextBoxColumn8.Name = "Address";
+            gridViewTextBoxColumn8.FieldName = "Time";
+            gridViewTextBoxColumn8.HeaderText = "Time";
+            gridViewTextBoxColumn8.Name = "Time";
             gridViewTextBoxColumn8.Width = 69;
             gridViewTextBoxColumn9.EnableExpressionEditor = false;
-            gridViewTextBoxColumn9.FieldName = "City";
-            gridViewTextBoxColumn9.HeaderText = "City";
-            gridViewTextBoxColumn9.Name = "City";
-            gridViewTextBoxColumn9.Width = 69;
+            gridViewTextBoxColumn9.FieldName = "Latitude";
+            gridViewTextBoxColumn9.HeaderText = "Latitude";
+            gridViewTextBoxColumn9.IsVisible = false;
+            gridViewTextBoxColumn9.Name = "Latitude";
+            gridViewTextBoxColumn9.Width = 43;
             gridViewTextBoxColumn10.EnableExpressionEditor = false;
-            gridViewTextBoxColumn10.FieldName = "Source";
-            gridViewTextBoxColumn10.HeaderText = "Source";
-            gridViewTextBoxColumn10.Name = "Source";
-            gridViewTextBoxColumn10.Width = 67;
-            gridViewTextBoxColumn11.EnableExpressionEditor = false;
-            gridViewTextBoxColumn11.FieldName = "Visibility";
-            gridViewTextBoxColumn11.HeaderText = "Visibility";
-            gridViewTextBoxColumn11.Name = "Visibility";
-            gridViewTextBoxColumn11.Width = 53;
+            gridViewTextBoxColumn10.FieldName = "Longitude";
+            gridViewTextBoxColumn10.HeaderText = "Longitude";
+            gridViewTextBoxColumn10.IsVisible = false;
+            gridViewTextBoxColumn10.Name = "Longitude";
             this.allVisitedPlacesGrid.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
             gridViewTextBoxColumn1,
             gridViewTextBoxColumn2,
@@ -183,15 +179,14 @@
             gridViewTextBoxColumn7,
             gridViewTextBoxColumn8,
             gridViewTextBoxColumn9,
-            gridViewTextBoxColumn10,
-            gridViewTextBoxColumn11});
+            gridViewTextBoxColumn10});
             this.allVisitedPlacesGrid.MasterTemplate.EnableFiltering = true;
             this.allVisitedPlacesGrid.MasterTemplate.ViewDefinition = tableViewDefinition1;
             this.allVisitedPlacesGrid.Name = "allVisitedPlacesGrid";
             this.allVisitedPlacesGrid.ReadOnly = true;
             this.allVisitedPlacesGrid.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.allVisitedPlacesGrid.ShowGroupPanel = false;
-            this.allVisitedPlacesGrid.Size = new System.Drawing.Size(841, 472);
+            this.allVisitedPlacesGrid.Size = new System.Drawing.Size(725, 472);
             this.allVisitedPlacesGrid.TabIndex = 5;
             this.allVisitedPlacesGrid.Text = "radGridView1";
             this.allVisitedPlacesGrid.CurrentRowChanged += new Telerik.WinControls.UI.CurrentRowChangedEventHandler(this.MasterTemplate_CurrentRowChanged);
@@ -204,7 +199,7 @@
             this.gMapControl1.GrayScaleMode = false;
             this.gMapControl1.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
             this.gMapControl1.LevelsKeepInMemmory = 5;
-            this.gMapControl1.Location = new System.Drawing.Point(874, 73);
+            this.gMapControl1.Location = new System.Drawing.Point(763, 73);
             this.gMapControl1.MarkersEnabled = true;
             this.gMapControl1.MaxZoom = 18;
             this.gMapControl1.MinZoom = 2;
@@ -217,7 +212,7 @@
             this.gMapControl1.ScaleMode = GMap.NET.WindowsForms.ScaleModes.Integer;
             this.gMapControl1.SelectedAreaFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(65)))), ((int)(((byte)(105)))), ((int)(((byte)(225)))));
             this.gMapControl1.ShowTileGridLines = false;
-            this.gMapControl1.Size = new System.Drawing.Size(426, 298);
+            this.gMapControl1.Size = new System.Drawing.Size(532, 288);
             this.gMapControl1.TabIndex = 7;
             this.gMapControl1.Zoom = 13D;
             this.gMapControl1.Load += new System.EventHandler(this.gMapControl1_Load);
@@ -226,13 +221,13 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.75F);
-            this.label3.Location = new System.Drawing.Point(875, 49);
+            this.label3.Location = new System.Drawing.Point(759, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 21);
             this.label3.TabIndex = 8;
             this.label3.Text = "Geo Location";
             // 
-            // AllVisitedPlacesUserControl
+            // RoutinePlacesUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -245,8 +240,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radSeparator1);
-            this.Name = "AllVisitedPlacesUserControl";
-            this.Size = new System.Drawing.Size(1303, 637);
+            this.Name = "RoutinePlacesUserControl";
+            this.Size = new System.Drawing.Size(1306, 637);
             this.Load += new System.EventHandler(this.AllVisitedPlacesUserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator1)).EndInit();

@@ -37,9 +37,12 @@ namespace GeoPrivacyVisualizerApplication.MyPlaces
         }
         private void MasterTemplate_CurrentRowChanged(object sender, Telerik.WinControls.UI.CurrentRowChangedEventArgs e)
         {
-            if (allVisitedPlacesGrid.CurrentRow != null)
+            if (allVisitedPlacesGrid.CurrentRow.Index != -1)
+            {
                 gMapControl1.Position = new GMap.NET.PointLatLng(double.Parse(allVisitedPlacesGrid.CurrentRow.Cells["Coordinates(X)"].Value.ToString()),
                     double.Parse(allVisitedPlacesGrid.CurrentRow.Cells["Coordinates(Y)"].Value.ToString()));
+                gMapControl1.Zoom = 15;
+            }
         }
 
         private void gMapControl1_Load(object sender, EventArgs e)

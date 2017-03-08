@@ -474,6 +474,7 @@
             this.RoutinePlacesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.RoutinePlacesButton.TextWrap = true;
             this.RoutinePlacesButton.Visible = false;
+            this.RoutinePlacesButton.Click += new System.EventHandler(this.RoutinePlacesButton_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.RoutinePlacesButton.GetChildAt(0))).Image = null;
             ((Telerik.WinControls.UI.RadButtonElement)(this.RoutinePlacesButton.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             ((Telerik.WinControls.UI.RadButtonElement)(this.RoutinePlacesButton.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -505,6 +506,7 @@
             this.FavouritePlacesButton.Text = "Favourite";
             this.FavouritePlacesButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.FavouritePlacesButton.Visible = false;
+            this.FavouritePlacesButton.Click += new System.EventHandler(this.FavouritePlacesButton_Click);
             ((Telerik.WinControls.UI.RadButtonElement)(this.FavouritePlacesButton.GetChildAt(0))).Image = null;
             ((Telerik.WinControls.UI.RadButtonElement)(this.FavouritePlacesButton.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             ((Telerik.WinControls.UI.RadButtonElement)(this.FavouritePlacesButton.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
