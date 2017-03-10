@@ -110,18 +110,19 @@
             this.panel1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(852, 674);
+            this.panel1.Size = new System.Drawing.Size(1005, 714);
             this.panel1.TabIndex = 9;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // allVisitedPlacesButton
             // 
             this.allVisitedPlacesButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.allVisitedPlacesButton.BackColor = System.Drawing.Color.Transparent;
             this.allVisitedPlacesButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.allVisitedPlacesButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.allVisitedPlacesButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.allVisitedPlacesButton.ForeColor = System.Drawing.Color.Black;
             this.allVisitedPlacesButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.allVisitedPlacesButton.Location = new System.Drawing.Point(660, 178);
+            this.allVisitedPlacesButton.Location = new System.Drawing.Point(835, 178);
             this.allVisitedPlacesButton.Name = "allVisitedPlacesButton";
             this.allVisitedPlacesButton.Size = new System.Drawing.Size(78, 75);
             this.allVisitedPlacesButton.TabIndex = 42;
@@ -139,13 +140,15 @@
     "u have been to";
             ((Telerik.WinControls.UI.RadButtonElement)(this.allVisitedPlacesButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.LimeGreen;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.LimeGreen;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.LimeGreen;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.LimeGreen;
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(1).GetChildAt(1))).TextWrap = true;
+            ((Telerik.WinControls.Primitives.TextPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(1).GetChildAt(1))).Alignment = System.Drawing.ContentAlignment.MiddleCenter;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.allVisitedPlacesButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // roundRectShape1
@@ -156,10 +159,10 @@
             // 
             this.myFriendshipsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.myFriendshipsButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.myFriendshipsButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myFriendshipsButton.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.myFriendshipsButton.ForeColor = System.Drawing.Color.Black;
             this.myFriendshipsButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.myFriendshipsButton.Location = new System.Drawing.Point(232, 243);
+            this.myFriendshipsButton.Location = new System.Drawing.Point(308, 243);
             this.myFriendshipsButton.Name = "myFriendshipsButton";
             this.myFriendshipsButton.Size = new System.Drawing.Size(108, 108);
             this.myFriendshipsButton.TabIndex = 41;
@@ -174,23 +177,23 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.myFriendshipsButton.GetChildAt(0))).Text = "My Friendships";
             ((Telerik.WinControls.UI.RadButtonElement)(this.myFriendshipsButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.myFriendshipsButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // myInterestsButton
             // 
             this.myInterestsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.myInterestsButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.myInterestsButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myInterestsButton.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.myInterestsButton.ForeColor = System.Drawing.Color.Black;
             this.myInterestsButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.myInterestsButton.Location = new System.Drawing.Point(383, 422);
+            this.myInterestsButton.Location = new System.Drawing.Point(458, 452);
             this.myInterestsButton.Name = "myInterestsButton";
             this.myInterestsButton.Size = new System.Drawing.Size(108, 108);
             this.myInterestsButton.TabIndex = 40;
@@ -205,23 +208,23 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.myInterestsButton.GetChildAt(0))).Text = "My Interests/ Activities";
             ((Telerik.WinControls.UI.RadButtonElement)(this.myInterestsButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.myInterestsButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // routineFriendsButton
             // 
             this.routineFriendsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.routineFriendsButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.routineFriendsButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routineFriendsButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.routineFriendsButton.ForeColor = System.Drawing.Color.Black;
             this.routineFriendsButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.routineFriendsButton.Location = new System.Drawing.Point(139, 337);
+            this.routineFriendsButton.Location = new System.Drawing.Point(110, 393);
             this.routineFriendsButton.Name = "routineFriendsButton";
             this.routineFriendsButton.Size = new System.Drawing.Size(78, 75);
             this.routineFriendsButton.TabIndex = 39;
@@ -236,23 +239,23 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.routineFriendsButton.GetChildAt(0))).Text = "Routine Meetings";
             ((Telerik.WinControls.UI.RadButtonElement)(this.routineFriendsButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.OrangeRed;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.OrangeRed;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.routineFriendsButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // favouriteFriendsButton
             // 
             this.favouriteFriendsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.favouriteFriendsButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.favouriteFriendsButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.favouriteFriendsButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.favouriteFriendsButton.ForeColor = System.Drawing.Color.Black;
             this.favouriteFriendsButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.favouriteFriendsButton.Location = new System.Drawing.Point(38, 301);
+            this.favouriteFriendsButton.Location = new System.Drawing.Point(47, 312);
             this.favouriteFriendsButton.Name = "favouriteFriendsButton";
             this.favouriteFriendsButton.Size = new System.Drawing.Size(82, 75);
             this.favouriteFriendsButton.TabIndex = 38;
@@ -266,23 +269,23 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.favouriteFriendsButton.GetChildAt(0))).Text = "Favourite";
             ((Telerik.WinControls.UI.RadButtonElement)(this.favouriteFriendsButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.OrangeRed;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.OrangeRed;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.favouriteFriendsButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // informationFriendsButton
             // 
             this.informationFriendsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.informationFriendsButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.informationFriendsButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.informationFriendsButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.informationFriendsButton.ForeColor = System.Drawing.Color.Black;
             this.informationFriendsButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.informationFriendsButton.Location = new System.Drawing.Point(36, 202);
+            this.informationFriendsButton.Location = new System.Drawing.Point(43, 221);
             this.informationFriendsButton.Name = "informationFriendsButton";
             this.informationFriendsButton.Size = new System.Drawing.Size(86, 75);
             this.informationFriendsButton.TabIndex = 37;
@@ -297,53 +300,54 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.informationFriendsButton.GetChildAt(0))).Text = "Friends Information";
             ((Telerik.WinControls.UI.RadButtonElement)(this.informationFriendsButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.LimeGreen;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.LimeGreen;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.LimeGreen;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.LimeGreen;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.informationFriendsButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // allFriendsButton
             // 
             this.allFriendsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.allFriendsButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.allFriendsButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.allFriendsButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.allFriendsButton.ForeColor = System.Drawing.Color.Black;
             this.allFriendsButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.allFriendsButton.Location = new System.Drawing.Point(143, 178);
+            this.allFriendsButton.Location = new System.Drawing.Point(110, 140);
             this.allFriendsButton.Name = "allFriendsButton";
             this.allFriendsButton.Size = new System.Drawing.Size(78, 75);
             this.allFriendsButton.TabIndex = 36;
-            this.allFriendsButton.Text = "All Friends";
+            this.allFriendsButton.Text = "All Friends meetings";
             this.allFriendsButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.allFriendsButton.TextWrap = true;
             this.allFriendsButton.Visible = false;
             ((Telerik.WinControls.UI.RadButtonElement)(this.allFriendsButton.GetChildAt(0))).Image = null;
             ((Telerik.WinControls.UI.RadButtonElement)(this.allFriendsButton.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             ((Telerik.WinControls.UI.RadButtonElement)(this.allFriendsButton.GetChildAt(0))).ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             ((Telerik.WinControls.UI.RadButtonElement)(this.allFriendsButton.GetChildAt(0))).DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            ((Telerik.WinControls.UI.RadButtonElement)(this.allFriendsButton.GetChildAt(0))).Text = "All Friends";
+            ((Telerik.WinControls.UI.RadButtonElement)(this.allFriendsButton.GetChildAt(0))).Text = "All Friends meetings";
             ((Telerik.WinControls.UI.RadButtonElement)(this.allFriendsButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.LimeGreen;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.LimeGreen;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.LimeGreen;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.LimeGreen;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.allFriendsButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // allInterestsButton
             // 
             this.allInterestsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.allInterestsButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.allInterestsButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.allInterestsButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.allInterestsButton.ForeColor = System.Drawing.Color.Black;
             this.allInterestsButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.allInterestsButton.Location = new System.Drawing.Point(514, 536);
+            this.allInterestsButton.Location = new System.Drawing.Point(566, 610);
             this.allInterestsButton.Name = "allInterestsButton";
             this.allInterestsButton.Size = new System.Drawing.Size(78, 75);
             this.allInterestsButton.TabIndex = 35;
@@ -358,13 +362,13 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.allInterestsButton.GetChildAt(0))).Text = "All Interests";
             ((Telerik.WinControls.UI.RadButtonElement)(this.allInterestsButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.LimeGreen;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.LimeGreen;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.LimeGreen;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.LimeGreen;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.allInterestsButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // favouriteInterestsButton
@@ -372,10 +376,10 @@
             this.favouriteInterestsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.favouriteInterestsButton.BackColor = System.Drawing.Color.Transparent;
             this.favouriteInterestsButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.favouriteInterestsButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.favouriteInterestsButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.favouriteInterestsButton.ForeColor = System.Drawing.Color.Black;
             this.favouriteInterestsButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.favouriteInterestsButton.Location = new System.Drawing.Point(397, 581);
+            this.favouriteInterestsButton.Location = new System.Drawing.Point(468, 633);
             this.favouriteInterestsButton.Name = "favouriteInterestsButton";
             this.favouriteInterestsButton.Size = new System.Drawing.Size(78, 75);
             this.favouriteInterestsButton.TabIndex = 34;
@@ -389,23 +393,23 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.favouriteInterestsButton.GetChildAt(0))).Text = "Favourite";
             ((Telerik.WinControls.UI.RadButtonElement)(this.favouriteInterestsButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.OrangeRed;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.Transparent;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.OrangeRed;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.favouriteInterestsButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // routineInterestsButton
             // 
             this.routineInterestsButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.routineInterestsButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.routineInterestsButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routineInterestsButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.routineInterestsButton.ForeColor = System.Drawing.Color.Black;
             this.routineInterestsButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.routineInterestsButton.Location = new System.Drawing.Point(285, 536);
+            this.routineInterestsButton.Location = new System.Drawing.Point(375, 610);
             this.routineInterestsButton.Name = "routineInterestsButton";
             this.routineInterestsButton.Size = new System.Drawing.Size(78, 75);
             this.routineInterestsButton.TabIndex = 33;
@@ -420,23 +424,23 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.routineInterestsButton.GetChildAt(0))).Text = "Routine Interests";
             ((Telerik.WinControls.UI.RadButtonElement)(this.routineInterestsButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.OrangeRed;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.OrangeRed;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.routineInterestsButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // myPlacesButton
             // 
             this.myPlacesButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.myPlacesButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.myPlacesButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.myPlacesButton.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.myPlacesButton.ForeColor = System.Drawing.Color.Black;
             this.myPlacesButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.myPlacesButton.Location = new System.Drawing.Point(530, 243);
+            this.myPlacesButton.Location = new System.Drawing.Point(606, 243);
             this.myPlacesButton.Name = "myPlacesButton";
             this.myPlacesButton.Size = new System.Drawing.Size(108, 108);
             this.myPlacesButton.TabIndex = 32;
@@ -450,23 +454,23 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.myPlacesButton.GetChildAt(0))).Text = "My Places";
             ((Telerik.WinControls.UI.RadButtonElement)(this.myPlacesButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(0)))));
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.myPlacesButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // RoutinePlacesButton
             // 
             this.RoutinePlacesButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.RoutinePlacesButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.RoutinePlacesButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RoutinePlacesButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.RoutinePlacesButton.ForeColor = System.Drawing.Color.Black;
             this.RoutinePlacesButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.RoutinePlacesButton.Location = new System.Drawing.Point(660, 328);
+            this.RoutinePlacesButton.Location = new System.Drawing.Point(835, 349);
             this.RoutinePlacesButton.Name = "RoutinePlacesButton";
             this.RoutinePlacesButton.Size = new System.Drawing.Size(78, 75);
             this.RoutinePlacesButton.TabIndex = 31;
@@ -483,23 +487,23 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.RoutinePlacesButton.GetChildAt(0))).ToolTipText = "This option shows information about your visit patterns";
             ((Telerik.WinControls.UI.RadButtonElement)(this.RoutinePlacesButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.OrangeRed;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.OrangeRed;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.RoutinePlacesButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // FavouritePlacesButton
             // 
             this.FavouritePlacesButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.FavouritePlacesButton.DisplayStyle = Telerik.WinControls.DisplayStyle.Text;
-            this.FavouritePlacesButton.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FavouritePlacesButton.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold);
             this.FavouritePlacesButton.ForeColor = System.Drawing.Color.Black;
             this.FavouritePlacesButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.FavouritePlacesButton.Location = new System.Drawing.Point(729, 260);
+            this.FavouritePlacesButton.Location = new System.Drawing.Point(865, 260);
             this.FavouritePlacesButton.Name = "FavouritePlacesButton";
             this.FavouritePlacesButton.Size = new System.Drawing.Size(78, 75);
             this.FavouritePlacesButton.TabIndex = 30;
@@ -515,23 +519,23 @@
             ((Telerik.WinControls.UI.RadButtonElement)(this.FavouritePlacesButton.GetChildAt(0))).ToolTipText = "This option shows information about your top visited places";
             ((Telerik.WinControls.UI.RadButtonElement)(this.FavouritePlacesButton.GetChildAt(0))).Shape = this.roundRectShape1;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor2 = System.Drawing.Color.OrangeRed;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.White;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor3 = System.Drawing.Color.OrangeRed;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor4 = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).GradientStyle = Telerik.WinControls.GradientStyles.Linear;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).GradientAngle = 45F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).GradientPercentage = 0.006122449F;
             ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).GradientPercentage2 = 0.9691358F;
-            ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.SystemColors.Control;
+            ((Telerik.WinControls.Primitives.FillPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(0))).BackColor = System.Drawing.Color.OrangeRed;
             ((Telerik.WinControls.Primitives.BorderPrimitive)(this.FavouritePlacesButton.GetChildAt(0).GetChildAt(2))).ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             // 
             // userButton
             // 
             this.userButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.userButton.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userButton.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.userButton.ForeColor = System.Drawing.Color.Black;
             this.userButton.Image = global::GeoPrivacyVisualizerApplication.Properties.Resources.userIcon;
             this.userButton.ImageAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            this.userButton.Location = new System.Drawing.Point(383, 288);
+            this.userButton.Location = new System.Drawing.Point(459, 288);
             this.userButton.Name = "userButton";
             this.userButton.Size = new System.Drawing.Size(108, 108);
             this.userButton.TabIndex = 19;
@@ -556,54 +560,54 @@
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Times New Roman", 16.25F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label7.Location = new System.Drawing.Point(38, 128);
+            this.label7.Location = new System.Drawing.Point(251, 127);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(732, 23);
+            this.label7.Size = new System.Drawing.Size(518, 25);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Explore your profile to find out more about your data and privacy implications ";
+            this.label7.Text = "Explore your profile to find out more about your data ";
             // 
             // panel2
             // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(640, 12);
+            this.panel2.Location = new System.Drawing.Point(786, 12);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(167, 100);
+            this.panel2.Size = new System.Drawing.Size(208, 100);
             this.panel2.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11F);
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label6.Location = new System.Drawing.Point(34, 59);
+            this.label6.Location = new System.Drawing.Point(35, 59);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 20);
+            this.label6.Size = new System.Drawing.Size(130, 19);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Inferred";
+            this.label6.Text = "Inferred Information";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 11F);
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Location = new System.Drawing.Point(34, 29);
+            this.label5.Location = new System.Drawing.Point(35, 29);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 20);
+            this.label5.Size = new System.Drawing.Size(171, 19);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Direct";
+            this.label5.Text = "Directly shared information";
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.OrangeRed;
-            this.panel3.Location = new System.Drawing.Point(3, 59);
+            this.panel3.Location = new System.Drawing.Point(4, 59);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(25, 26);
             this.panel3.TabIndex = 10;
@@ -611,7 +615,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LimeGreen;
-            this.panel4.Location = new System.Drawing.Point(3, 27);
+            this.panel4.Location = new System.Drawing.Point(4, 27);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(25, 26);
             this.panel4.TabIndex = 11;
@@ -619,11 +623,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(6, 3);
+            this.label4.Location = new System.Drawing.Point(7, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(134, 19);
+            this.label4.Size = new System.Drawing.Size(118, 19);
             this.label4.TabIndex = 10;
             this.label4.Text = "Colour Meaning";
             // 
@@ -646,7 +650,7 @@
             this.FavouritePlacesLine,
             this.RoutinePlacesLine,
             this.allVisitedPlacesLine});
-            this.shapeContainer1.Size = new System.Drawing.Size(852, 674);
+            this.shapeContainer1.Size = new System.Drawing.Size(1005, 714);
             this.shapeContainer1.TabIndex = 43;
             this.shapeContainer1.TabStop = false;
             // 
@@ -656,10 +660,10 @@
             this.routineFriendsLine.BorderWidth = 2;
             this.routineFriendsLine.Name = "routineFriendsLine";
             this.routineFriendsLine.Visible = false;
-            this.routineFriendsLine.X1 = 182;
-            this.routineFriendsLine.X2 = 231;
-            this.routineFriendsLine.Y1 = 338;
-            this.routineFriendsLine.Y2 = 292;
+            this.routineFriendsLine.X1 = 183;
+            this.routineFriendsLine.X2 = 308;
+            this.routineFriendsLine.Y1 = 433;
+            this.routineFriendsLine.Y2 = 296;
             // 
             // favouriteFriendsLine
             // 
@@ -667,10 +671,10 @@
             this.favouriteFriendsLine.BorderWidth = 2;
             this.favouriteFriendsLine.Name = "favouriteFriendsLine";
             this.favouriteFriendsLine.Visible = false;
-            this.favouriteFriendsLine.X1 = 120;
-            this.favouriteFriendsLine.X2 = 233;
-            this.favouriteFriendsLine.Y1 = 335;
-            this.favouriteFriendsLine.Y2 = 291;
+            this.favouriteFriendsLine.X1 = 129;
+            this.favouriteFriendsLine.X2 = 307;
+            this.favouriteFriendsLine.Y1 = 346;
+            this.favouriteFriendsLine.Y2 = 296;
             // 
             // informationFriendsLine
             // 
@@ -678,10 +682,10 @@
             this.informationFriendsLine.BorderWidth = 2;
             this.informationFriendsLine.Name = "informationFriendsLine";
             this.informationFriendsLine.Visible = false;
-            this.informationFriendsLine.X1 = 233;
-            this.informationFriendsLine.X2 = 120;
-            this.informationFriendsLine.Y1 = 292;
-            this.informationFriendsLine.Y2 = 248;
+            this.informationFriendsLine.X1 = 308;
+            this.informationFriendsLine.X2 = 128;
+            this.informationFriendsLine.Y1 = 296;
+            this.informationFriendsLine.Y2 = 259;
             // 
             // allFriendsLine
             // 
@@ -689,10 +693,10 @@
             this.allFriendsLine.BorderWidth = 2;
             this.allFriendsLine.Name = "allFriendsLine";
             this.allFriendsLine.Visible = false;
-            this.allFriendsLine.X1 = 231;
-            this.allFriendsLine.X2 = 179;
-            this.allFriendsLine.Y1 = 289;
-            this.allFriendsLine.Y2 = 251;
+            this.allFriendsLine.X1 = 308;
+            this.allFriendsLine.X2 = 186;
+            this.allFriendsLine.Y1 = 295;
+            this.allFriendsLine.Y2 = 181;
             // 
             // favouriteInterestsLine
             // 
@@ -700,10 +704,10 @@
             this.favouriteInterestsLine.BorderWidth = 2;
             this.favouriteInterestsLine.Name = "favouriteInterestsLine";
             this.favouriteInterestsLine.Visible = false;
-            this.favouriteInterestsLine.X1 = 436;
-            this.favouriteInterestsLine.X2 = 436;
-            this.favouriteInterestsLine.Y1 = 581;
-            this.favouriteInterestsLine.Y2 = 528;
+            this.favouriteInterestsLine.X1 = 508;
+            this.favouriteInterestsLine.X2 = 509;
+            this.favouriteInterestsLine.Y1 = 636;
+            this.favouriteInterestsLine.Y2 = 558;
             // 
             // routineInterestsLine
             // 
@@ -711,10 +715,10 @@
             this.routineInterestsLine.BorderWidth = 2;
             this.routineInterestsLine.Name = "routineInterestsLine";
             this.routineInterestsLine.Visible = false;
-            this.routineInterestsLine.X1 = 362;
-            this.routineInterestsLine.X2 = 434;
-            this.routineInterestsLine.Y1 = 574;
-            this.routineInterestsLine.Y2 = 529;
+            this.routineInterestsLine.X1 = 414;
+            this.routineInterestsLine.X2 = 508;
+            this.routineInterestsLine.Y1 = 613;
+            this.routineInterestsLine.Y2 = 559;
             // 
             // allInterestsLine
             // 
@@ -722,40 +726,40 @@
             this.allInterestsLine.BorderWidth = 2;
             this.allInterestsLine.Name = "allInterestsLine";
             this.allInterestsLine.Visible = false;
-            this.allInterestsLine.X1 = 514;
-            this.allInterestsLine.X2 = 438;
-            this.allInterestsLine.Y1 = 574;
-            this.allInterestsLine.Y2 = 529;
+            this.allInterestsLine.X1 = 599;
+            this.allInterestsLine.X2 = 508;
+            this.allInterestsLine.Y1 = 609;
+            this.allInterestsLine.Y2 = 558;
             // 
             // myInterestsLine
             // 
             this.myInterestsLine.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.myInterestsLine.BorderWidth = 2;
             this.myInterestsLine.Name = "myInterestsLine";
-            this.myInterestsLine.X1 = 436;
-            this.myInterestsLine.X2 = 436;
-            this.myInterestsLine.Y1 = 422;
-            this.myInterestsLine.Y2 = 395;
+            this.myInterestsLine.X1 = 512;
+            this.myInterestsLine.X2 = 512;
+            this.myInterestsLine.Y1 = 453;
+            this.myInterestsLine.Y2 = 396;
             // 
             // myFriendshipsLine
             // 
             this.myFriendshipsLine.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.myFriendshipsLine.BorderWidth = 2;
             this.myFriendshipsLine.Name = "myFriendshipsLine";
-            this.myFriendshipsLine.X1 = 384;
-            this.myFriendshipsLine.X2 = 339;
+            this.myFriendshipsLine.X1 = 459;
+            this.myFriendshipsLine.X2 = 415;
             this.myFriendshipsLine.Y1 = 333;
-            this.myFriendshipsLine.Y2 = 303;
+            this.myFriendshipsLine.Y2 = 299;
             // 
             // myPlacesLine
             // 
             this.myPlacesLine.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.myPlacesLine.BorderWidth = 2;
             this.myPlacesLine.Name = "myPlacesLine";
-            this.myPlacesLine.X1 = 490;
-            this.myPlacesLine.X2 = 531;
+            this.myPlacesLine.X1 = 566;
+            this.myPlacesLine.X2 = 606;
             this.myPlacesLine.Y1 = 331;
-            this.myPlacesLine.Y2 = 303;
+            this.myPlacesLine.Y2 = 299;
             // 
             // FavouritePlacesLine
             // 
@@ -763,10 +767,10 @@
             this.FavouritePlacesLine.BorderWidth = 2;
             this.FavouritePlacesLine.Name = "FavouritePlacesLine";
             this.FavouritePlacesLine.Visible = false;
-            this.FavouritePlacesLine.X1 = 730;
-            this.FavouritePlacesLine.X2 = 636;
-            this.FavouritePlacesLine.Y1 = 297;
-            this.FavouritePlacesLine.Y2 = 297;
+            this.FavouritePlacesLine.X1 = 866;
+            this.FavouritePlacesLine.X2 = 712;
+            this.FavouritePlacesLine.Y1 = 298;
+            this.FavouritePlacesLine.Y2 = 298;
             // 
             // RoutinePlacesLine
             // 
@@ -774,10 +778,10 @@
             this.RoutinePlacesLine.BorderWidth = 2;
             this.RoutinePlacesLine.Name = "RoutinePlacesLine";
             this.RoutinePlacesLine.Visible = false;
-            this.RoutinePlacesLine.X1 = 697;
-            this.RoutinePlacesLine.X2 = 638;
-            this.RoutinePlacesLine.Y1 = 328;
-            this.RoutinePlacesLine.Y2 = 297;
+            this.RoutinePlacesLine.X1 = 838;
+            this.RoutinePlacesLine.X2 = 710;
+            this.RoutinePlacesLine.Y1 = 386;
+            this.RoutinePlacesLine.Y2 = 295;
             // 
             // allVisitedPlacesLine
             // 
@@ -785,10 +789,10 @@
             this.allVisitedPlacesLine.BorderWidth = 2;
             this.allVisitedPlacesLine.Name = "allVisitedPlacesLine";
             this.allVisitedPlacesLine.Visible = false;
-            this.allVisitedPlacesLine.X1 = 638;
-            this.allVisitedPlacesLine.X2 = 697;
-            this.allVisitedPlacesLine.Y1 = 294;
-            this.allVisitedPlacesLine.Y2 = 252;
+            this.allVisitedPlacesLine.X1 = 713;
+            this.allVisitedPlacesLine.X2 = 836;
+            this.allVisitedPlacesLine.Y1 = 299;
+            this.allVisitedPlacesLine.Y2 = 216;
             // 
             // object_3195392f_0819_4c2a_9bc4_7ba6b579cf9c
             // 
@@ -806,11 +810,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(852, 674);
+            this.ClientSize = new System.Drawing.Size(1005, 714);
             this.Controls.Add(this.panel1);
+            this.MinimumSize = new System.Drawing.Size(1021, 736);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Geo-Privacy Visualizer";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

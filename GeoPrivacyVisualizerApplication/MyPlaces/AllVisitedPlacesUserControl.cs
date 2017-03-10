@@ -33,6 +33,7 @@ namespace GeoPrivacyVisualizerApplication.MyPlaces
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
             markers = new GMap.NET.WindowsForms.GMapOverlay("markers");
             gMapControl1.Overlays.Add(markers);
+            gMapControl1.DragButton = MouseButtons.Left;
             loadMarkersOntoMap();
         }
         private void MasterTemplate_CurrentRowChanged(object sender, Telerik.WinControls.UI.CurrentRowChangedEventArgs e)
@@ -65,6 +66,21 @@ namespace GeoPrivacyVisualizerApplication.MyPlaces
                 }
                 catch { }
             }
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            (this.Parent as Form).Close();
+        }
+
+        private void zoomInPictureBox_Click(object sender, EventArgs e)
+        {
+            gMapControl1.Zoom++;
+        }
+
+        private void zoomOutPictureBox_Click(object sender, EventArgs e)
+        {
+            gMapControl1.Zoom--;
         }
     }
 }

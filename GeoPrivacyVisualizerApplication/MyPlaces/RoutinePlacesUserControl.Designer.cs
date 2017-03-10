@@ -39,7 +39,10 @@
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoutinePlacesUserControl));
+            Telerik.WinControls.UI.CartesianArea cartesianArea1 = new Telerik.WinControls.UI.CartesianArea();
+            Telerik.WinControls.UI.CartesianArea cartesianArea2 = new Telerik.WinControls.UI.CartesianArea();
+            Telerik.WinControls.UI.CartesianArea cartesianArea3 = new Telerik.WinControls.UI.CartesianArea();
             this.label1 = new System.Windows.Forms.Label();
             this.radSeparator1 = new Telerik.WinControls.UI.RadSeparator();
             this.radSeparator2 = new Telerik.WinControls.UI.RadSeparator();
@@ -47,22 +50,34 @@
             this.allVisitedPlacesGrid = new Telerik.WinControls.UI.RadGridView();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.backButton = new System.Windows.Forms.Button();
+            this.zoomOutPictureBox = new System.Windows.Forms.PictureBox();
+            this.zoomInPictureBox = new System.Windows.Forms.PictureBox();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.routineDayChartView = new Telerik.WinControls.UI.RadChartView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.routineDayAndTimeChartView = new Telerik.WinControls.UI.RadChartView();
+            this.radChartView2 = new Telerik.WinControls.UI.RadChartView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomOutPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomInPictureBox)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.routineDayChartView)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.routineDayAndTimeChartView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radChartView2)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GeoPrivacyVisualizerApplication.Properties.Resources.important_98442_960_720;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -189,6 +204,7 @@
             this.allVisitedPlacesGrid.Size = new System.Drawing.Size(725, 472);
             this.allVisitedPlacesGrid.TabIndex = 5;
             this.allVisitedPlacesGrid.Text = "radGridView1";
+            this.allVisitedPlacesGrid.CellFormatting += new Telerik.WinControls.UI.CellFormattingEventHandler(this.allVisitedPlacesGrid_CellFormatting);
             this.allVisitedPlacesGrid.CurrentRowChanged += new Telerik.WinControls.UI.CurrentRowChangedEventHandler(this.MasterTemplate_CurrentRowChanged);
             // 
             // gMapControl1
@@ -227,11 +243,152 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Geo Location";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GeoPrivacyVisualizerApplication.Properties.Resources.important_98442_960_720;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 35);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.SteelBlue;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.Color.White;
+            this.backButton.Image = ((System.Drawing.Image)(resources.GetObject("backButton.Image")));
+            this.backButton.Location = new System.Drawing.Point(3, 3);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(31, 26);
+            this.backButton.TabIndex = 45;
+            this.backButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // zoomOutPictureBox
+            // 
+            this.zoomOutPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("zoomOutPictureBox.Image")));
+            this.zoomOutPictureBox.Location = new System.Drawing.Point(1301, 219);
+            this.zoomOutPictureBox.Name = "zoomOutPictureBox";
+            this.zoomOutPictureBox.Size = new System.Drawing.Size(47, 48);
+            this.zoomOutPictureBox.TabIndex = 51;
+            this.zoomOutPictureBox.TabStop = false;
+            this.zoomOutPictureBox.Click += new System.EventHandler(this.zoomOutPictureBox_Click);
+            // 
+            // zoomInPictureBox
+            // 
+            this.zoomInPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("zoomInPictureBox.Image")));
+            this.zoomInPictureBox.Location = new System.Drawing.Point(1301, 165);
+            this.zoomInPictureBox.Name = "zoomInPictureBox";
+            this.zoomInPictureBox.Size = new System.Drawing.Size(47, 48);
+            this.zoomInPictureBox.TabIndex = 50;
+            this.zoomInPictureBox.TabStop = false;
+            this.zoomInPictureBox.Click += new System.EventHandler(this.zoomInPictureBox_Click);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(759, 367);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(590, 316);
+            this.tabControl1.TabIndex = 52;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.routineDayChartView);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(582, 290);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Routine By Day";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // routineDayChartView
+            // 
+            this.routineDayChartView.AreaDesign = cartesianArea1;
+            this.routineDayChartView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.routineDayChartView.Location = new System.Drawing.Point(3, 3);
+            this.routineDayChartView.Name = "routineDayChartView";
+            this.routineDayChartView.ShowGrid = false;
+            this.routineDayChartView.ShowLegend = true;
+            this.routineDayChartView.ShowToolTip = true;
+            this.routineDayChartView.Size = new System.Drawing.Size(576, 284);
+            this.routineDayChartView.TabIndex = 53;
+            this.routineDayChartView.Text = "radChartView1";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.routineDayAndTimeChartView);
+            this.tabPage2.Controls.Add(this.radChartView2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(582, 290);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Routine By Day and Time";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // routineDayAndTimeChartView
+            // 
+            this.routineDayAndTimeChartView.AreaDesign = cartesianArea2;
+            this.routineDayAndTimeChartView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.routineDayAndTimeChartView.Location = new System.Drawing.Point(3, 3);
+            this.routineDayAndTimeChartView.Name = "routineDayAndTimeChartView";
+            this.routineDayAndTimeChartView.ShowGrid = false;
+            this.routineDayAndTimeChartView.ShowLegend = true;
+            this.routineDayAndTimeChartView.ShowToolTip = true;
+            this.routineDayAndTimeChartView.Size = new System.Drawing.Size(576, 284);
+            this.routineDayAndTimeChartView.TabIndex = 1;
+            this.routineDayAndTimeChartView.Text = "radChartView3";
+            // 
+            // radChartView2
+            // 
+            this.radChartView2.AreaDesign = cartesianArea3;
+            this.radChartView2.Location = new System.Drawing.Point(135, 106);
+            this.radChartView2.Name = "radChartView2";
+            this.radChartView2.ShowGrid = false;
+            this.radChartView2.Size = new System.Drawing.Size(480, 320);
+            this.radChartView2.TabIndex = 0;
+            this.radChartView2.Text = "radChartView2";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.chartControl1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(582, 290);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // chartControl1
+            // 
+            this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartControl1.Legend.Name = "Default Legend";
+            this.chartControl1.Location = new System.Drawing.Point(3, 3);
+            this.chartControl1.Name = "chartControl1";
+            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[0];
+            this.chartControl1.Size = new System.Drawing.Size(576, 284);
+            this.chartControl1.TabIndex = 2;
+            // 
             // RoutinePlacesUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.zoomOutPictureBox);
+            this.Controls.Add(this.zoomInPictureBox);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gMapControl1);
             this.Controls.Add(this.radSeparator2);
@@ -241,13 +398,23 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radSeparator1);
             this.Name = "RoutinePlacesUserControl";
-            this.Size = new System.Drawing.Size(1306, 637);
+            this.Size = new System.Drawing.Size(1352, 683);
             this.Load += new System.EventHandler(this.AllVisitedPlacesUserControl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomOutPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomInPictureBox)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.routineDayChartView)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.routineDayAndTimeChartView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.radChartView2)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,5 +430,16 @@
         private Telerik.WinControls.UI.RadGridView allVisitedPlacesGrid;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.PictureBox zoomOutPictureBox;
+        private System.Windows.Forms.PictureBox zoomInPictureBox;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private Telerik.WinControls.UI.RadChartView routineDayChartView;
+        private System.Windows.Forms.TabPage tabPage2;
+        private Telerik.WinControls.UI.RadChartView routineDayAndTimeChartView;
+        private Telerik.WinControls.UI.RadChartView radChartView2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private DevExpress.XtraCharts.ChartControl chartControl1;
     }
 }

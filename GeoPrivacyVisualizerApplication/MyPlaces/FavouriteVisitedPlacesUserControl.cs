@@ -47,7 +47,7 @@ namespace GeoPrivacyVisualizerApplication.MyPlaces
                                    CategoryName = grp.Key.CategoryName,
                                    CategoryURLType = grp.Key.CategoryURLType,
                                    FormattedAddress = grp.Key.FormattedAddress,
-                                   City = grp.Key.FormattedAddress,
+                                   City = grp.Key.City,
                                    Latitude = grp.Key.Latitude,
                                    Longitude = grp.Key.Longitude,
                                    Count = grp.Count()
@@ -59,6 +59,7 @@ namespace GeoPrivacyVisualizerApplication.MyPlaces
             GMap.NET.GMaps.Instance.Mode = GMap.NET.AccessMode.ServerOnly;
             markers = new GMap.NET.WindowsForms.GMapOverlay("markers");
             gMapControl1.Overlays.Add(markers);
+            gMapControl1.DragButton = MouseButtons.Left;
             loadMarkersOntoMap();
         }
         private void MasterTemplate_CurrentRowChanged(object sender, Telerik.WinControls.UI.CurrentRowChangedEventArgs e)
@@ -96,6 +97,21 @@ namespace GeoPrivacyVisualizerApplication.MyPlaces
         private void radChartView2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void backButton_Click(object sender, EventArgs e)
+        {
+            (this.Parent as Form).Close();
+        }
+
+        private void zoomInPictureBox_Click(object sender, EventArgs e)
+        {
+            gMapControl1.Zoom++;
+        }
+
+        private void zoomOutPictureBox_Click(object sender, EventArgs e)
+        {
+            gMapControl1.Zoom--;
         }
     }
 }

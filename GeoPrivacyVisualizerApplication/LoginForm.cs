@@ -67,5 +67,13 @@ namespace GeoPrivacyVisualizerApplication
             }
             return false;
         }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                login();
+            }
+        }
     }
 }

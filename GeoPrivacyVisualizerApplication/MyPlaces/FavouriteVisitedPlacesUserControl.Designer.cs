@@ -38,6 +38,7 @@
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
             Telerik.WinControls.UI.PieSeries pieSeries1 = new Telerik.WinControls.UI.PieSeries();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FavouriteVisitedPlacesUserControl));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.radSeparator1 = new Telerik.WinControls.UI.RadSeparator();
@@ -49,18 +50,23 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.radChartView2 = new Telerik.WinControls.UI.RadChartView();
+            this.backButton = new System.Windows.Forms.Button();
+            this.zoomOutPictureBox = new System.Windows.Forms.PictureBox();
+            this.zoomInPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid.MasterTemplate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radChartView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomOutPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomInPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GeoPrivacyVisualizerApplication.Properties.Resources.important_98442_960_720;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(34, 33);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(50, 54);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -260,19 +266,57 @@
             this.radChartView2.Text = "radChartView2";
             this.radChartView2.Click += new System.EventHandler(this.radChartView2_Click);
             ((Telerik.WinControls.UI.RadChartElement)(this.radChartView2.GetChildAt(0))).NumberOfColors = 10;
-            ((Telerik.WinControls.UI.RadChartElement)(this.radChartView2.GetChildAt(0))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             ((Telerik.WinControls.UI.ChartLegendElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2))).DrawBorder = true;
-            ((Telerik.WinControls.UI.ChartLegendElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2))).TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            ((Telerik.WinControls.UI.ChartLegendElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2))).TextWrap = true;
-            ((Telerik.WinControls.UI.ChartLegendElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2))).Alignment = System.Drawing.ContentAlignment.MiddleCenter;
-            ((Telerik.WinControls.UI.StackLayoutElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2).GetChildAt(1).GetChildAt(0).GetChildAt(0))).TextWrap = true;
-            ((Telerik.WinControls.UI.StackLayoutElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2).GetChildAt(1).GetChildAt(0).GetChildAt(0))).AutoSize = true;
+            ((Telerik.WinControls.UI.ChartLegendElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2))).Font = new System.Drawing.Font("Segoe UI", 8F);
+            ((Telerik.WinControls.UI.ChartLegendElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2))).AutoSize = true;
+            ((Telerik.WinControls.UI.ChartLegendElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2))).Alignment = System.Drawing.ContentAlignment.MiddleLeft;
+            ((Telerik.WinControls.UI.ChartLegendElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2))).MinSize = new System.Drawing.Size(250, 277);
+            ((Telerik.WinControls.UI.ChartLegendElement)(this.radChartView2.GetChildAt(0).GetChildAt(0).GetChildAt(2))).MaxSize = new System.Drawing.Size(250, 277);
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.SteelBlue;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.Color.White;
+            this.backButton.Image = ((System.Drawing.Image)(resources.GetObject("backButton.Image")));
+            this.backButton.Location = new System.Drawing.Point(3, 3);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(31, 26);
+            this.backButton.TabIndex = 45;
+            this.backButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // zoomOutPictureBox
+            // 
+            this.zoomOutPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("zoomOutPictureBox.Image")));
+            this.zoomOutPictureBox.Location = new System.Drawing.Point(1301, 218);
+            this.zoomOutPictureBox.Name = "zoomOutPictureBox";
+            this.zoomOutPictureBox.Size = new System.Drawing.Size(47, 48);
+            this.zoomOutPictureBox.TabIndex = 49;
+            this.zoomOutPictureBox.TabStop = false;
+            this.zoomOutPictureBox.Click += new System.EventHandler(this.zoomOutPictureBox_Click);
+            // 
+            // zoomInPictureBox
+            // 
+            this.zoomInPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("zoomInPictureBox.Image")));
+            this.zoomInPictureBox.Location = new System.Drawing.Point(1301, 164);
+            this.zoomInPictureBox.Name = "zoomInPictureBox";
+            this.zoomInPictureBox.Size = new System.Drawing.Size(47, 48);
+            this.zoomInPictureBox.TabIndex = 48;
+            this.zoomInPictureBox.TabStop = false;
+            this.zoomInPictureBox.Click += new System.EventHandler(this.zoomInPictureBox_Click);
             // 
             // FavouriteVisitedPlacesUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.zoomOutPictureBox);
+            this.Controls.Add(this.zoomInPictureBox);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.radChartView2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -285,7 +329,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radSeparator1);
             this.Name = "FavouriteVisitedPlacesUserControl";
-            this.Size = new System.Drawing.Size(1306, 637);
+            this.Size = new System.Drawing.Size(1352, 637);
             this.Load += new System.EventHandler(this.AllVisitedPlacesUserControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator1)).EndInit();
@@ -293,6 +337,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radChartView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomOutPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomInPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -311,5 +357,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private Telerik.WinControls.UI.RadChartView radChartView2;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.PictureBox zoomOutPictureBox;
+        private System.Windows.Forms.PictureBox zoomInPictureBox;
     }
 }

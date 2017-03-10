@@ -40,7 +40,7 @@
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn11 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             Telerik.WinControls.UI.TableViewDefinition tableViewDefinition1 = new Telerik.WinControls.UI.TableViewDefinition();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllVisitedPlacesUserControl));
             this.label1 = new System.Windows.Forms.Label();
             this.radSeparator1 = new Telerik.WinControls.UI.RadSeparator();
             this.radSeparator2 = new Telerik.WinControls.UI.RadSeparator();
@@ -48,22 +48,18 @@
             this.allVisitedPlacesGrid = new Telerik.WinControls.UI.RadGridView();
             this.gMapControl1 = new GMap.NET.WindowsForms.GMapControl();
             this.label3 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.zoomInPictureBox = new System.Windows.Forms.PictureBox();
+            this.backButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.zoomOutPictureBox = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid.MasterTemplate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomInPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomOutPictureBox)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GeoPrivacyVisualizerApplication.Properties.Resources.important_98442_960_720;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 27);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(50, 54);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -232,11 +228,60 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Geo Location";
             // 
+            // zoomInPictureBox
+            // 
+            this.zoomInPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("zoomInPictureBox.Image")));
+            this.zoomInPictureBox.Location = new System.Drawing.Point(1302, 152);
+            this.zoomInPictureBox.Name = "zoomInPictureBox";
+            this.zoomInPictureBox.Size = new System.Drawing.Size(47, 48);
+            this.zoomInPictureBox.TabIndex = 46;
+            this.zoomInPictureBox.TabStop = false;
+            this.zoomInPictureBox.Click += new System.EventHandler(this.zoomInPictureBox_Click);
+            // 
+            // backButton
+            // 
+            this.backButton.BackColor = System.Drawing.Color.SteelBlue;
+            this.backButton.FlatAppearance.BorderSize = 0;
+            this.backButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backButton.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backButton.ForeColor = System.Drawing.Color.White;
+            this.backButton.Image = ((System.Drawing.Image)(resources.GetObject("backButton.Image")));
+            this.backButton.Location = new System.Drawing.Point(3, 3);
+            this.backButton.Name = "backButton";
+            this.backButton.Size = new System.Drawing.Size(31, 26);
+            this.backButton.TabIndex = 45;
+            this.backButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.backButton.UseVisualStyleBackColor = false;
+            this.backButton.Click += new System.EventHandler(this.backButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GeoPrivacyVisualizerApplication.Properties.Resources.important_98442_960_720;
+            this.pictureBox1.Location = new System.Drawing.Point(22, 33);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(50, 54);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // zoomOutPictureBox
+            // 
+            this.zoomOutPictureBox.Image = ((System.Drawing.Image)(resources.GetObject("zoomOutPictureBox.Image")));
+            this.zoomOutPictureBox.Location = new System.Drawing.Point(1302, 206);
+            this.zoomOutPictureBox.Name = "zoomOutPictureBox";
+            this.zoomOutPictureBox.Size = new System.Drawing.Size(47, 48);
+            this.zoomOutPictureBox.TabIndex = 47;
+            this.zoomOutPictureBox.TabStop = false;
+            this.zoomOutPictureBox.Click += new System.EventHandler(this.zoomOutPictureBox_Click);
+            // 
             // AllVisitedPlacesUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.zoomOutPictureBox);
+            this.Controls.Add(this.zoomInPictureBox);
+            this.Controls.Add(this.backButton);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gMapControl1);
             this.Controls.Add(this.radSeparator2);
@@ -245,14 +290,17 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.radSeparator1);
+            this.MinimumSize = new System.Drawing.Size(1352, 637);
             this.Name = "AllVisitedPlacesUserControl";
-            this.Size = new System.Drawing.Size(1303, 637);
+            this.Size = new System.Drawing.Size(1352, 637);
             this.Load += new System.EventHandler(this.AllVisitedPlacesUserControl_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSeparator2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid.MasterTemplate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.allVisitedPlacesGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomInPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zoomOutPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,5 +316,8 @@
         private Telerik.WinControls.UI.RadGridView allVisitedPlacesGrid;
         private GMap.NET.WindowsForms.GMapControl gMapControl1;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.PictureBox zoomInPictureBox;
+        private System.Windows.Forms.PictureBox zoomOutPictureBox;
     }
 }

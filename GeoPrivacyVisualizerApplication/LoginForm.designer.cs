@@ -35,8 +35,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +49,8 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(153, 27);
             this.txtUsername.TabIndex = 2;
+            this.txtUsername.Text = "hesham";
+            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
             // 
             // txtPassword
             // 
@@ -59,6 +61,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(153, 27);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.Text = "1";
             this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
             // 
             // label1
@@ -116,17 +119,6 @@
             this.panel1.Size = new System.Drawing.Size(276, 189);
             this.panel1.TabIndex = 8;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(32, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(219, 23);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Geo-Privacy Visualizer";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DodgerBlue;
@@ -142,6 +134,17 @@
             this.button1.Text = "Exit";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label3.Location = new System.Drawing.Point(32, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(219, 23);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Geo-Privacy Visualizer";
             // 
             // LoginForm
             // 
